@@ -1,59 +1,104 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Tokyo Animania – Responsive Product Landing Page
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A responsive product landing page created for **Tokyo Animania**, a small business offering anime figures and Japanese collectibles. This project was developed as a **Week 5 Laboratory Activity** using Laravel, Tailwind CSS, and reusable Laravel Blade Components.
 
-## About Laravel
+## About the Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Tokyo Animania's landing page provides customers with a responsive way to explore featured anime figures and collectibles, learn about the shop, read customer feedback, and contact the seller for product prices and availability.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Since product prices and availability may vary, customers are directed to contact Tokyo Animania through Messenger instead of purchasing directly through the website.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Technologies Used
 
-## Learning Laravel
+- Laravel
+- PHP
+- Laravel Blade
+- Blade Components
+- Tailwind CSS
+- HTML5
+- Vite
+- Git
+- GitHub
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## Features
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Responsive navigation bar and mobile menu
+- Hero section with call-to-action buttons
+- Shop features and benefits
+- Featured product cards and product showcase
+- Collector options
+- Customer testimonials
+- Call-to-action and contact section
+- Responsive footer
+- Demo sign-in interface
+- Desktop, tablet, and mobile layouts
 
-## Laravel Sponsors
+## Laravel Blade Components
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+The website uses reusable Blade Components to keep the interface organized and maintainable.
 
-### Premium Partners
+```text
+resources/views/components/
+├── navbar.blade.php
+├── hero.blade.php
+├── feature-card.blade.php
+├── features.blade.php
+├── product-card.blade.php
+├── products.blade.php
+├── showcase.blade.php
+├── pricing-card.blade.php
+├── pricing.blade.php
+├── testimonial-card.blade.php
+├── testimonials.blade.php
+├── cta.blade.php
+├── button.blade.php
+└── footer.blade.php
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Responsive Design
 
-## Contributing
+The landing page adapts to desktop, tablet, and mobile screen sizes. Desktop displays the full navigation and multi-column sections, while tablet and mobile layouts adjust spacing, typography, cards, and navigation for smaller screens.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Screenshots
 
-## Code of Conduct
+Project screenshots are stored in the `screenshots` directory, including desktop, tablet, mobile, navbar, hero, features, pricing, testimonials, call-to-action, footer, Blade components, and demo sign-in views.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Demo Sign-In
 
-## Security Vulnerabilities
+The project includes a demonstration Sign-In page for interface and navigation purposes. It does **not** implement real user authentication or store user credentials in a database. A complete authentication system may be implemented as a future enhancement.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Installation
 
-## License
+```bash
+git clone https://github.com/rosaleshane/week05-product-landing-page.git
+cd week05-product-landing-page
+composer install
+npm install
+copy .env.example .env
+php artisan key:generate
+npm run dev
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+In another terminal:
+
+```bash
+php artisan serve
+```
+
+Then open `http://127.0.0.1:8000` in your browser.
+
+## Project Purpose
+
+This project demonstrates responsive web design, Laravel Blade templating, reusable Blade Components, Tailwind CSS utility classes and breakpoints, Git version control, and GitHub project documentation.
+
+## Future Enhancements
+
+Possible future improvements include real customer authentication, registration, a product database, admin dashboard, inventory management, shopping cart, order tracking, online checkout, and product search/filtering.
+
+## Business
+
+**Tokyo Animania** — Anime figures and Japanese collectibles. Customers can inquire about product prices and availability through the business's official social media channels.
+
+## Academic Project
+
+This website was created for educational purposes as part of a Week 5 Responsive Product Landing Page laboratory activity.
