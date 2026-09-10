@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+:root {
+    --ta-cream: #f7f1e7;
+    --ta-orange: #f47a1f;
+    --ta-yellow: #ffc928;
+    --ta-aqua: #55c8c5;
+    --ta-ink: #171717;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at 15% 0%, rgba(255, 201, 40, .16), transparent 28rem),
+        radial-gradient(circle at 90% 15%, rgba(85, 200, 197, .14), transparent 32rem),
+        var(--ta-cream);
+    color: var(--ta-ink);
+}
+
+.retro-shadow {
+    box-shadow: 7px 7px 0 #171717;
+}
+
+.retro-shadow-sm {
+    box-shadow: 4px 4px 0 #171717;
+}
+
+.wave-band {
+    background:
+        linear-gradient(166deg,
+            transparent 0 18%,
+            var(--ta-orange) 18% 34%,
+            var(--ta-yellow) 34% 48%,
+            var(--ta-aqua) 48% 64%,
+            transparent 64% 100%);
+}
+
+.grid-paper {
+    background-image:
+        linear-gradient(rgba(23, 23, 23, .045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 23, 23, .045) 1px, transparent 1px);
+    background-size: 26px 26px;
+}
+
+.marquee-track {
+    animation: marquee 26s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track { animation: none; }
+}
